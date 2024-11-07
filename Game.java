@@ -104,8 +104,6 @@ public class Game {
 
     /**
      * Updates the score for the winning player.
-     *
-     * @param winner Name of the winning player.
      */
     private void updateScore(String winner) {
         if (winner.equals(player1)) {
