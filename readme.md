@@ -1,8 +1,8 @@
 # Game of Nim
 ## PLTW Activity 2.5.11
-[repo](https://github.com/Hussanrap/PLTW-2.5.11-HussainK_MichaelO_AmirE_SanjayR)
-[milestone](https://docs.google.com/spreadsheets/d/1tvox2lX-NaIAe0-43pmZ_LlgeZPhEcN8UA6sHp1bcE0/edit?gid=0#gid=0)
-[slides](https://docs.google.com/presentation/d/19DIrrSq6FMF4XDWQL4fLLTax9Xn3H9hBvwc0sI4c8ic/edit#slide=id.p)
+- [repo](https://github.com/Hussanrap/PLTW-2.5.11-HussainK_MichaelO_AmirE_SanjayR)
+- [milestone](https://docs.google.com/spreadsheets/d/1tvox2lX-NaIAe0-43pmZ_LlgeZPhEcN8UA6sHp1bcE0/edit?gid=0#gid=0)
+- [slides](https://docs.google.com/presentation/d/19DIrrSq6FMF4XDWQL4fLLTax9Xn3H9hBvwc0sI4c8ic/edit#slide=id.p)
 
 
 
@@ -27,7 +27,6 @@ Your submission to this project will be to add a link to your google slides to t
 
 Student Eval Forms (these will be updated to reflect the requirement to include constructs or explanations from 2.5.1-2.5.9)
 
-[Presentation Student Eval Form (sample)](https://forms.gle/KbkcQpXUixa5dxKf6)
-
-[Gallery Walk Student Eval Form (sample)](https://forms.gle/qVDyvQNaUYRz8gAX8)
+- [Presentation Student Eval Form (sample)](https://forms.gle/KbkcQpXUixa5dxKf6)
+- [Gallery Walk Student Eval Form (sample)](https://forms.gle/qVDyvQNaUYRz8gAX8)
 
