@@ -41,7 +41,6 @@ public class Board {
 
     /**
      * Checks if the pile is empty, indicating the game has ended.
-     * @return True if the pile is empty, false otherwise.
      */
     public static boolean isEmpty() {
         return pileSize <= 0;
@@ -49,7 +48,6 @@ public class Board {
 
     /**
      * Gets the current pile size.
-     * @return Current number of pieces in the pile.
      */
     public static int getPileSize() {
         return pileSize;
