@@ -1,5 +1,6 @@
 # Game of Nim
 ## PLTW Activity 2.5.11
+### Resources
 - [repo](https://github.com/Hussanrap/PLTW-2.5.11-HussainK_MichaelO_AmirE_SanjayR)
 - [milestone](https://docs.google.com/spreadsheets/d/1tvox2lX-NaIAe0-43pmZ_LlgeZPhEcN8UA6sHp1bcE0/edit?gid=0#gid=0)
 - [slides](https://docs.google.com/presentation/d/19DIrrSq6FMF4XDWQL4fLLTax9Xn3H9hBvwc0sI4c8ic/edit#slide=id.p)
