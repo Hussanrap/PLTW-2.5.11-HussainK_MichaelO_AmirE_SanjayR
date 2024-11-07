@@ -2,15 +2,15 @@ import java.util.Random;
 
 public class Board {
     private static int pileSize;
-    private static final int MIN_PILE_SIZE = 10;
-    private static final int MAX_PILE_SIZE = 50;
+    private static final int minPile = 10;
+    private static final int maxPile = 50;
 
     /**
      * Initializes the board with a random pile size between 10 and 50 pieces.
      */
     public static void populate() {
         Random random = new Random();
-        pileSize = random.nextInt(MAX_PILE_SIZE - MIN_PILE_SIZE + 1) + MIN_PILE_SIZE;
+        pileSize = random.nextInt(maxPile - minPile + 1) + minPile;
     }
 
     /**
