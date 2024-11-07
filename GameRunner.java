@@ -12,6 +12,7 @@ public class GameRunner {
     
     Game nim = new Game(); 
     nim.play();
+
     
   }
 }
