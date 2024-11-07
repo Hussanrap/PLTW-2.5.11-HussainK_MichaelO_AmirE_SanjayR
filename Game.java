@@ -8,6 +8,7 @@ public class Game {
     private int currentPlayerNumber;
     private int score1;
     private int score2;
+    private boolean playedGame;
 
     /**
      * Constructor initializes a new game and randomly selects the starting player.
@@ -24,10 +25,12 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
 
         // Get player names
-        System.out.print("Enter Player 1's name: ");
-        player1 = scanner.nextLine();
-        System.out.print("Enter Player 2's name: ");
-        player2 = scanner.nextLine();
+        if (!playedGame) {
+            System.out.print("Enter Player 1's name: ");
+            player1 = scanner.nextLine();
+            System.out.print("Enter Player 2's name: ");
+            player2 = scanner.nextLine();
+        }
 
         // Randomly select the starting player
         currentPlayerNumber = new Random().nextInt(2) + 1;
@@ -81,7 +84,7 @@ public class Game {
 
     /**
      * Prompts the user for a validated integer input.
-     * 
+     *
      * @param message Prompt message for the user.
      * @param max     Maximum allowable pieces to take.
      * @param scanner Scanner for reading input.
@@ -106,7 +109,7 @@ public class Game {
 
     /**
      * Updates the score for the winning player.
-     * 
+     *
      * @param winner Name of the winning player.
      */
     private void updateScore(String winner) {
@@ -124,6 +127,7 @@ public class Game {
         System.out.println("\nCurrent Scores:");
         System.out.println(player1 + ": " + score1);
         System.out.println(player2 + ": " + score2);
+        playedGame = true;
     }
 
     /**
