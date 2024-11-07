@@ -22,8 +22,6 @@ public class Board {
 
     /**
      * Removes a given number of pieces from the pile.
-     * @param count Number of pieces to remove.
-     * @return True if removal is successful, false otherwise.
      */
     public static boolean removePieces(int count) {
         if (pileSize == 1) {
