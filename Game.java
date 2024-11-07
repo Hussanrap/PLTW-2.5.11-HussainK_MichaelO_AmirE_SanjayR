@@ -32,6 +32,8 @@ public class Game {
             player2 = scanner.nextLine();
         }
 
+
+
         // Randomly select the starting player
         currentPlayerNumber = new Random().nextInt(2) + 1;
         currentPlayer = (currentPlayerNumber == 1) ? player1 : player2;
@@ -46,7 +48,14 @@ public class Game {
 
             // Adjust maximum pieces based on the current pile size
             int maxPieces = (Board.getPileSize() == 1) ? 1 : Math.max(1, Board.getPileSize() / 2);
-            int piecesTaken = getUserInput("Enter the number of pieces to remove (1 to " + maxPieces + "): ", maxPieces, scanner, Board.getPileSize());
+            int piecesTaken;
+
+            if (currentPlayer.equalsIgnoreCase("Computer")) {
+                piecesTaken = computeOptimalMove(Board.getPileSize(), maxPieces);
+                System.out.println("Computer removed " +  piecesTaken + " pieces!");
+            } else {
+                piecesTaken = getUserInput("Enter the number of pieces to remove (1 to " + maxPieces + "): ", maxPieces, scanner, Board.getPileSize());
+            }
 
             if (Board.removePieces(piecesTaken)) {
                 // Switch to the next player
@@ -74,6 +83,21 @@ public class Game {
             System.out.println("Thank you for playing!");
         }
         scanner.close();
+    }
+
+
+    private int computeOptimalMove(int pileSize, int maxPieces) {
+        int targetSize = 1;
+        while (targetSize - 1 < pileSize) {
+            targetSize *= 2;
+        }
+        targetSize = (targetSize / 2) - 1;
+
+        int piecesToTake = pileSize - targetSize;
+        if (piecesToTake <= 0 || piecesToTake > maxPieces) {
+            piecesToTake = Math.max(1, Math.min(maxPieces, pileSize / 2));
+        }
+        return piecesToTake;
     }
 
     /**
