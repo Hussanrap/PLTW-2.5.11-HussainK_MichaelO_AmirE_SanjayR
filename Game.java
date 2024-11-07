@@ -84,14 +84,7 @@ public class Game {
         currentPlayer = (currentPlayerNumber == 1) ? player1 : player2;
     }
 
-    /**
-     * Prompts the user for a validated integer input.
-     *
-     * @param message Prompt message for the user.
-     * @param max     Maximum allowable pieces to take.
-     * @param scanner Scanner for reading input.
-     * @return Validated integer input.
-     */
+
     private int getUserInput(String message, int max, Scanner scanner, int pileSize) {
         System.out.print(message);
         while (!scanner.hasNextInt()) {
