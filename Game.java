@@ -58,7 +58,9 @@ public class Game {
 
         // Announce the winner
         String winner = (currentPlayerNumber == 1) ? player1 : player2;
-        System.out.println("\n" + winner + " wins! " + currentPlayer + " was forced to take the last piece.");
+        String notWinner = (currentPlayerNumber == 1) ? player2 : player1;
+
+        System.out.println("\n" + winner + " wins! " + notWinner+ " was forced to take the last piece.");
         updateScore(winner);
 
         // Show scores
