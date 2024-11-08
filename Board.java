@@ -1,12 +1,16 @@
 import java.util.Random;
 
+/**
+ * The Board class represents the pile of pieces for the Game of Nim.
+ * It manages the pile size and provides methods to manipulate and display the pile.
+ */
 public class Board {
-    private static int pileSize;
-    private static final int minPile = 10;
-    private static final int maxPile = 50;
+    private static int pileSize; // The current number of pieces in the pile
+    private static final int minPile = 10; // Minimum starting pile size
+    private static final int maxPile = 50; // Maximum starting pile size
 
     /**
-     * Initializes the board with a random pile size between 10 and 50 pieces.
+     * Initializes the board with a random pile size between the specified minimum and maximum limits.
      */
     public static void populate() {
         Random random = new Random();
@@ -14,14 +18,18 @@ public class Board {
     }
 
     /**
-     * Displays the current pile size.
+     * Displays the current number of pieces in the pile.
      */
     public static void display() {
         System.out.println("\nCurrent pile size: " + pileSize + " pieces");
     }
 
     /**
-     * Removes a given number of pieces from the pile.
+     * Removes a specified number of pieces from the pile, if valid.
+     * The removal count must be between 1 and half the pile size, inclusive.
+     * 
+     * @param count the number of pieces to remove
+     * @return true if the removal is successful; false if the count is invalid
      */
     public static boolean removePieces(int count) {
         if (pileSize == 1) {
@@ -38,14 +46,18 @@ public class Board {
     }
 
     /**
-     * Checks if the pile is empty, indicating the game has ended.
+     * Checks if the pile is empty, which indicates the end of the game.
+     * 
+     * @return true if the pile size is zero or less, false otherwise
      */
     public static boolean isEmpty() {
         return pileSize <= 0;
     }
 
     /**
-     * Gets the current pile size.
+     * Retrieves the current number of pieces in the pile.
+     * 
+     * @return the current pile size
      */
     public static int getPileSize() {
         return pileSize;
