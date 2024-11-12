@@ -76,6 +76,20 @@ public class Game {
         System.out.println("\n" + winner + " wins! " + notWinner + " was forced to take the last piece.");
         updateScore(winner);
 
+
+        String trophy = "  ___________\n"
+        + " '._==_==_=_.'\n"
+        + " .-\\:      /-.'\n"
+        + "| (|:.     |) |\n"
+        + " '-|:.     |-'\n"
+        + "   \\::.    /\n"
+        + "    '::. .'\n"
+        + "    _.' '._\n"
+        + "   ` " + winner + " `\n"
+        + "   \"\"\"\"\"\"\"\"\"";
+
+        System.out.println(trophy);
+
         // Show scores
         displayScores();
 
